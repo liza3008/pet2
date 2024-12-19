@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agendamento de Banho e Tosa</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="logo"></div>
+    <h1>AGENDAMENTO DE BANHO E TOSA</h1>
+</header>
+<div class="conteudo">
+  
+    <section class="formulario">
+        <label for="nomePet">NOME DO PET </label>
+        <input type="text" id="nomePet" placeholder="Digite o nome do pet">
+        <label for="raca">RACA </label>
+        <input type="text" id="raca" placeholder="Digite a raça">
+        <label for="donoPet">DONO DO PET </label>
+        <input type="text" id="donoPet" placeholder="Nome do dono">
+        <label for="telefone">TELEFONE </label>
+        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+        <button onclick="agendarPet()">AGENDAR O PET</button>
+    </section>
+    <section class="tabela-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME DO PET</th>
+                    <th>RACA</th>
+                    <th>DONO DO PET</th>
+                    <th>TELEFONE</th>
+                    <th>REMOVER</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaPets"></tbody>
+        </table>
+    </section>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
